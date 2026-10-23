@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Terre Rouge Iguazú · Café, pastelería y cocina en Av. Brasil</title>
+  <title>Terre Rouge Iguazú · Café, Vin &amp; Cuisine</title>
   <meta name="description" content="Terre Rouge, café & patisserie en la esquina de Av. Brasil y San Martín, Puerto Iguazú. Desayunos, pastelería, cocina misionera y copas, todos los días de 7 a 23.">
   <meta name="theme-color" content="#16191c">
-  <meta property="og:title" content="Terre Rouge Iguazú · Café & Patisserie">
+  <meta property="og:title" content="Terre Rouge Iguazú · Café, Vin &amp; Cuisine">
   <meta property="og:description" content="Café, pastelería y cocina misionera en Av. Brasil y San Martín, Puerto Iguazú. Todos los días de 7 a 23.">
   <meta property="og:image" content="img/casa/fachada-noche.webp">
   <meta property="og:locale" content="es_AR">
@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=chillax@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=gambetta@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preload" as="image" href="img/casa/fachada-noche.webp">
   <script type="application/ld+json">
@@ -22,7 +23,7 @@
     "@type": "CafeOrCoffeeShop",
     "name": "Terre Rouge Iguazú",
     "image": "img/casa/fachada-noche.webp",
-    "servesCuisine": ["Café", "Pastelería", "Cocina argentina"],
+    "servesCuisine": ["Café", "Vinos", "Cocina misionera"],
     "telephone": "+54 3757 63-7686",
     "address": {
       "@type": "PostalAddress",
@@ -50,8 +51,8 @@
     <a class="bar__mark" href="#top" aria-label="Terre Rouge, inicio">Terre Rouge</a>
     <nav class="bar__links" aria-label="Secciones">
       <a href="#hora">Hora por hora</a>
+      <a href="#menus">Menús</a>
       <a href="#carta">Carta</a>
-      <a href="#casa">La casa</a>
       <a href="#visitanos">Visitanos</a>
     </nav>
     <a class="bar__action" href="#reservar">Reservar</a>
@@ -76,7 +77,7 @@
 
       <div class="hero__copy">
         <h1 class="hero__title" id="hero-title">Terre Rouge</h1>
-        <p class="hero__lede">Café, pastelería y cocina misionera en la esquina de Av. Brasil y San Martín, Puerto Iguazú.</p>
+        <p class="hero__lede">Café, vinos y cocina de nuestra tierra en la esquina de Av. Brasil y San Martín, Puerto Iguazú.</p>
         <p class="hero__status" data-status><span class="dot" aria-hidden="true"></span><span data-status-text>Abierto todos los días de 7 a 23</span></p>
       </div>
 
@@ -137,6 +138,42 @@
       <script type="application/json" id="moments">{{MOMENTS_JSON}}</script>
     </section>
 
+    <!-- ============ MENÚS DE TRES PASOS: from the house's Instagram ============ -->
+    <section class="menus" id="menus" aria-labelledby="menus-title" data-ink="light">
+      <figure class="menus__film" data-reveal-pic>
+        <video class="menus__video" muted loop playsinline preload="none" poster="media/menus-loop-poster.webp" data-film
+          aria-label="Los platos de los menús: ojo de bife con salsa de yerba mate, cheesecake con grosellas, pacú con maracuyá y crème brûlée de yerba mate.">
+          <source src="media/menus-loop.mp4" type="video/mp4">
+        </video>
+      </figure>
+      <div class="menus__text">
+        <h2 id="menus-title" data-reveal>Dos menús de tres pasos</h2>
+        <p class="menus__lead" data-reveal>Sabores de nuestra tierra con un toque contemporáneo. Nacieron para el Día de la Madre y se quedan en la carta.</p>
+        <div class="menus__pair">
+          <div class="menu" data-reveal>
+            <h3>Tradición en cada paso</h3>
+            <dl>
+              <div><dt>Entrada</dt><dd>Chipa guazú</dd></div>
+              <div><dt>Principal</dt><dd>Ojo de bife con salsa de yerba mate y verduras asadas al estilo ratatouille</dd></div>
+              <div><dt>Postre</dt><dd>Cheesecake con mermelada de grosellas</dd></div>
+            </dl>
+          </div>
+          <div class="menu" data-reveal>
+            <h3>Sabores que sorprenden</h3>
+            <dl>
+              <div><dt>Entrada</dt><dd>Empanada de pollo con harina de maíz, parmesano y salsa blanca, con humus de berenjena</dd></div>
+              <div><dt>Principal</dt><dd>Pacú con salsa de maracuyá y puré de tres raíces: papa, mandioca y batata</dd></div>
+              <div><dt>Postre</dt><dd>Crème brûlée de yerba mate con yacaratiá</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="menus__actions" data-reveal>
+          <a class="btn" href="#reservar">Reservar para probarlos</a>
+          <a class="link" href="https://www.instagram.com/p/DegzUzZEaWD/" target="_blank" rel="noopener">Ver el post en Instagram</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ LA CARTA: two-column menu, photo bullets, index with preview ============ -->
     <section class="carta" id="carta" aria-labelledby="carta-title" data-ink="dark">
       <div class="carta__head">
@@ -166,7 +203,7 @@
     <section class="barra" id="barra" aria-labelledby="barra-title" data-ink="light">
       <div class="barra__text">
         <h2 id="barra-title" data-reveal>La barra de café</h2>
-        <p data-reveal>Clásicos de jarrito y de taza grande, cafés especiales con whisky o licor, y una barra fría de frappés, smoothies y milkshakes que en verano de Iguazú se vuelve la carta principal.</p>
+        <p data-reveal>Hace calor, pero el café no se suspende. Clásicos de jarrito y de taza grande, cafés especiales con whisky o licor, y una barra fría de frappés, smoothies y milkshakes para el verano de Iguazú.</p>
         <a class="link" href="#carta" data-open-cat="cafeteria" data-reveal>Ver toda la cafetería</a>
       </div>
       <figure class="slides" data-slides>
@@ -211,6 +248,18 @@
       <figure class="opina__small" data-reveal-pic>
         <img src="img/menu/cafe-con-leche-lg.webp" width="720" height="900" alt="Un café con leche servido en una mesa de Terre Rouge." loading="lazy">
       </figure>
+    </section>
+
+    <!-- ============ INSTAGRAM: the latest posts of the house ============ -->
+    <section class="ig" id="instagram" aria-labelledby="ig-title" data-ink="light">
+      <div class="ig__head">
+        <h2 id="ig-title" data-reveal>Lo último en Instagram</h2>
+        <p data-reveal>Menús nuevos, sorteos y el día a día de la esquina, en <a href="https://instagram.com/terrerougeiguazu" target="_blank" rel="noopener">@terrerougeiguazu</a>.</p>
+      </div>
+      <ul class="ig__row" data-ig-row>
+{{IG_POSTS}}
+      </ul>
+      <a class="btn btn--light ig__follow" href="https://instagram.com/terrerougeiguazu" target="_blank" rel="noopener">Seguir en Instagram</a>
     </section>
 
     <!-- ============ RESERVAR: clip-out coupon ============ -->
@@ -282,6 +331,7 @@
 
   <!-- ============ FOOTER: the mark, built large ============ -->
   <footer class="pie" data-ink="light">
+    <p class="pie__lema">Degustá el momento. Disfrutá la experiencia.</p>
     <p class="mark" aria-label="Terre Rouge">
       <span class="mark__row"><span style="--h:.92">T</span><span style="--h:.7">E</span><span style="--h:1">R</span><span style="--h:.78">R</span><span style="--h:.88">E</span></span>
       <span class="mark__row"><span style="--h:1">R</span><span style="--h:.74">O</span><span style="--h:.9">U</span><span style="--h:.66">G</span><span style="--h:.84">E</span></span>
@@ -290,10 +340,12 @@
       <ul>
         <li><a href="#hora">Hora por hora</a></li>
         <li><a href="#carta">La carta</a></li>
+        <li><a href="#menus">Menús de tres pasos</a></li>
         <li><a href="#barra">La barra</a></li>
       </ul>
       <ul>
         <li><a href="#casa">La casa</a></li>
+        <li><a href="#instagram">Instagram</a></li>
         <li><a href="#reservar">Reservar</a></li>
         <li><a href="#visitanos">Visitanos</a></li>
       </ul>
@@ -309,7 +361,7 @@
       </address>
     </div>
     <div class="pie__last">
-      <p>© Terre Rouge Iguazú. Fotos de la carta: Terre Rouge. Fachada de noche: Economis. Fachada de día: Fabián Zeballos en Google Maps.</p>
+      <p>© Terre Rouge Iguazú. Fotos de la carta: Terre Rouge. Fotos y video de Instagram: @terrerougeiguazu. Fachada de noche: Economis. Fachada de día: Fabián Zeballos en Google Maps.</p>
       <a class="btn btn--small" href="#top">Volver arriba</a>
     </div>
   </footer>

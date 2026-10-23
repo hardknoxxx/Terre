@@ -34,6 +34,8 @@ y los momentos de "Hora por hora" están en `build.mjs` (`MOMENTS`).
 - **La carta**: pestañas por categoría, buscador y vista previa grande al pasar el mouse (escritorio).
 - **Reservas**: el formulario arma un mensaje de WhatsApp al +54 9 3757 63-7686.
 - **Mapa**: Google Maps embebido. Debajo queda un plano dibujado de la esquina por si el mapa no carga.
+- **Dos menús de tres pasos**: los platos que la casa presentó en Instagram (Día de la Madre) y que quedan en la carta, con un video corto de esos platos (`media/menus-loop.mp4`, armado desde su reel).
+- **Lo último en Instagram**: los 6 posts más recientes de @terrerougeiguazu, cada uno con enlace al post. Para actualizarlos, cambiá la lista `IG` en `build.mjs` y las imágenes en `img/ig/`.
 
 ## Fuentes de los datos y las fotos
 
@@ -41,6 +43,7 @@ y los momentos de "Hora por hora" están en `build.mjs` (`MOMENTS`).
 - Fachada de noche: nota de Economis (febrero de 2025).
 - Fachada de día: foto de Fabián Zeballos en Google Maps (nov. 2025).
 - Dirección, teléfono, horario (todos los días de 7 a 23) y nota 4,3: Google Maps.
+- Posts, fotos, textos, el lema «Degustá el momento. Disfrutá la experiencia.» y el video de platos: Instagram @terrerougeiguazu (posts del 29/9 al 19/10/2026).
 
 Antes de publicar, conviene que el local confirme las fotos de terceros (o las reemplace por fotos propias),
 los precios y los horarios de cada momento de "Hora por hora", que son una propuesta.

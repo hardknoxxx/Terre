@@ -19,6 +19,8 @@
   --selva-2: #2a4a38;
   --rattan: #d8c4a3;     /* the lamp shades */
   --amber: #f2b45a;      /* the lamps lit */
+  --espresso: #2a1e17;   /* the warm dark of the house's Instagram */
+  --espresso-2: #3a2a20;
 
   --bg: var(--stone);
   --surface: var(--stone-2);
@@ -26,6 +28,7 @@
   --accent-ink: var(--red-ink);
 
   --font: "Chillax", ui-rounded, "Avenir Next", system-ui, sans-serif;
+  --font-display: "Gambetta", "Iowan Old Style", Georgia, serif; /* the serif of the house's posts */
 
   --step-small: 1rem;
   --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
@@ -65,6 +68,7 @@ button, input, select { font: inherit; color: inherit; }
 button { background: none; border: 0; padding: 0; cursor: pointer; }
 a { color: inherit; }
 h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.03em; line-height: 1; text-wrap: balance; }
+h1, h2, h3, .statement, .hora__clock, .mark, .pie__lema { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.02em; }
 ::selection { background: var(--red); color: var(--red-ink); }
 :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 .vh { position: absolute !important; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -113,7 +117,7 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.03em; line-height: 1; text
 .hero__fallback { position: absolute; inset: 0; width: 100%; height: 100%; }
 .has-webgl .hero__fallback { display: none; }
 .hero__copy { position: relative; z-index: 1; padding: var(--lamp-zone) var(--margin) 0; text-align: center; }
-.hero__title { font-size: var(--step-display); line-height: 0.92; letter-spacing: -0.04em; }
+.hero__title { font-size: var(--step-display); line-height: 0.92; letter-spacing: -0.03em; }
 .hero__title .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.2em; margin-bottom: -0.2em; }
 .hero__title .w > span { display: inline-block; }
 .hero__lede { max-width: 42ch; margin: 2rem auto 0; font-size: var(--step-lead); line-height: 1.35; }
@@ -177,7 +181,7 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.03em; line-height: 1; text
 }
 .hora.is-night { color: var(--stone); }
 .hora__inner { max-width: 84rem; margin: 0 auto; }
-.statement { max-width: 30ch; margin: 0 auto; text-align: center; font-size: var(--step-statement); font-weight: 500; line-height: 1.22; letter-spacing: -0.015em; }
+.statement { max-width: 36ch; margin: 0 auto; text-align: center; font-size: var(--step-statement); font-weight: 500; line-height: 1.22; letter-spacing: -0.015em; }
 .thumb { display: inline-block; width: 1.7em; height: 1em; margin: 0 0.12em; vertical-align: -0.1em; overflow: hidden; border-radius: var(--dome); background: var(--surface); }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 599px) { .statement { text-align: left; } }
@@ -444,3 +448,50 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.03em; line-height: 1; text
   .slides__img { transition: opacity 400ms ease; transform: none; }
   .front__pic img { transform: none; transition: none; }
 }
+
+/* ---------- menús de tres pasos ---------- */
+.menus { background: var(--espresso); color: var(--stone); padding: var(--section) var(--margin); display: grid; gap: clamp(3rem, 6vw, 5rem); }
+.menus__film { width: min(100%, 36rem); justify-self: center; aspect-ratio: 1; overflow: hidden; border-radius: var(--dome); background: var(--espresso-2); }
+.menus__video { width: 100%; height: 100%; object-fit: cover; }
+.menus h2 { font-size: var(--step-head); }
+.menus__lead { margin-top: 1.25rem; max-width: 36ch; font-size: var(--step-lead); line-height: 1.35; }
+.menus__pair { display: grid; gap: 2.5rem var(--gutter); margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.menu h3 { font-size: var(--step-lead); color: var(--amber); }
+.menu dl { display: grid; gap: 1.1rem; margin-top: 1.25rem; }
+.menu dt { font-weight: 600; color: var(--rattan); }
+.menu dd { max-width: 34ch; }
+.menus__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+@media (min-width: 700px) { .menus__pair { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) {
+  .menus { grid-template-columns: repeat(12, 1fr); column-gap: var(--gutter); align-items: start; }
+  .menus__film { grid-column: 1 / 6; position: sticky; top: calc(var(--bar-h) + 2rem); width: 100%; }
+  .menus__text { grid-column: 7 / 13; }
+}
+
+/* ---------- instagram ---------- */
+.ig { background: var(--slate); color: var(--stone); padding: var(--section) var(--margin); }
+.ig__head { display: grid; gap: 1.25rem var(--gutter); align-items: end; }
+.ig__head h2 { font-size: var(--step-head); }
+.ig__head p { max-width: 38ch; font-size: var(--step-lead); line-height: 1.35; }
+.ig__head a { text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
+@media (min-width: 900px) { .ig__head { grid-template-columns: 1fr 1fr; } }
+.ig__row {
+  display: grid; grid-auto-flow: column; grid-auto-columns: min(72vw, 20rem); gap: var(--gutter);
+  margin: clamp(2.5rem, 5vw, 4rem) calc(-1 * var(--margin)) 0; padding: 0 var(--margin) 0.5rem;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 var(--margin); scrollbar-width: none;
+}
+.ig__row::-webkit-scrollbar { display: none; }
+@media (min-width: 600px) { .ig__row { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); grid-auto-columns: auto; overflow: visible; margin-inline: 0; padding-inline: 0; } }
+@media (min-width: 1100px) { .ig__row { grid-template-columns: repeat(6, 1fr); } }
+.post { scroll-snap-align: start; }
+.post a { display: grid; gap: 0.6rem; text-decoration: none; }
+.post__pic { display: block; aspect-ratio: 1; overflow: hidden; background: var(--slate-2); }
+.post__pic img { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--ease-out), opacity var(--t-hover) ease; }
+.post a:hover .post__pic img, .post a:focus-visible .post__pic img { transform: scale(1.06); }
+.post a:active .post__pic img { opacity: 0.8; }
+.post__date { margin-top: 0.4rem; font-weight: 600; color: var(--amber); }
+.post__text { line-height: 1.4; }
+.ig__follow { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+
+/* ---------- the house motto ---------- */
+.pie__lema { font-size: var(--step-statement); line-height: 1.15; max-width: 26ch; margin-bottom: clamp(2.5rem, 5vw, 4rem); }

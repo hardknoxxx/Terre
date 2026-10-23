@@ -210,6 +210,16 @@
     document.addEventListener('visibilitychange', play);
   }
 
+  /* ---------- the dishes film plays only while it is on screen ---------- */
+  const film = $('[data-film]');
+  if (film) {
+    if (reduce.matches) film.controls = true;
+    else new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { film.preload = 'auto'; film.play().catch(() => (film.controls = true)); }
+      else film.pause();
+    }, { threshold: 0.25 }).observe(film);
+  }
+
   /* ---------- reservation: the coupon writes a WhatsApp message ---------- */
   const form = $('[data-reserva]');
   if (form) {
@@ -256,6 +266,17 @@
   }, { rootMargin: '0px 0px 25% 0px', threshold: 0 });
   revealEls.forEach((el) => (el.hasAttribute('data-reveal-pic') ? ioPic : io).observe(el));
   function revealNow(scope) { scope && $$('[data-reveal], [data-reveal-pic]', scope).forEach((el) => el.classList.add('is-in')); }
+  // a safety net: anything the page has scrolled past is shown, even if the observer missed it
+  let pending = revealEls.slice();
+  const sweep = () => {
+    if (!pending.length) return;
+    pending = pending.filter((el) => {
+      if (el.classList.contains('is-in')) return false;
+      if (el.getBoundingClientRect().top < innerHeight) { el.classList.add('is-in'); return false; }
+      return true;
+    });
+  };
+  addEventListener('scroll', () => requestAnimationFrame(sweep), { passive: true });
   // a safety net: nothing stays hidden if the observer never fires
   setTimeout(() => revealEls.forEach((el) => { if (el.getBoundingClientRect().top < innerHeight) el.classList.add('is-in'); }), 2500);
 
@@ -300,6 +321,7 @@
   };
   const inkFor = (sec) => {
     if (sec.classList.contains('barra')) return ['var(--selva)', 'var(--stone)'];
+    if (sec.classList.contains('menus')) return ['var(--espresso)', 'var(--stone)'];
     if (sec.classList.contains('hora')) return sec.classList.contains('is-night') ? palette.light : palette.dark;
     if (sec.classList.contains('visita')) return ['var(--stone-2)', 'var(--ink)'];
     return palette[sec.dataset.ink] || palette.light;
