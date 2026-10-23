@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Terre Rouge Iguazú · Café, pastelería y cocina en Av. Brasil</title>
+  <meta name="description" content="Terre Rouge, café & patisserie en la esquina de Av. Brasil y San Martín, Puerto Iguazú. Desayunos, pastelería, cocina misionera y copas, todos los días de 7 a 23.">
+  <meta name="theme-color" content="#16191c">
+  <meta property="og:title" content="Terre Rouge Iguazú · Café & Patisserie">
+  <meta property="og:description" content="Café, pastelería y cocina misionera en Av. Brasil y San Martín, Puerto Iguazú. Todos los días de 7 a 23.">
+  <meta property="og:image" content="img/casa/fachada-noche.webp">
+  <meta property="og:locale" content="es_AR">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=chillax@400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="img/casa/fachada-noche.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Terre Rouge Iguazú",
+    "image": "img/casa/fachada-noche.webp",
+    "servesCuisine": ["Café", "Pastelería", "Cocina argentina"],
+    "telephone": "+54 3757 63-7686",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Brasil y San Martín",
+      "addressLocality": "Puerto Iguazú",
+      "addressRegion": "Misiones",
+      "postalCode": "N3370",
+      "addressCountry": "AR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -25.5967935, "longitude": -54.575345 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00", "closes": "23:00"
+    }],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.3", "bestRating": "5" },
+    "sameAs": ["https://instagram.com/terrerougeiguazu"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#carta">Saltar a la carta</a>
+
+  <header class="bar" data-bar>
+    <a class="bar__mark" href="#top" aria-label="Terre Rouge, inicio">Terre Rouge</a>
+    <nav class="bar__links" aria-label="Secciones">
+      <a href="#hora">Hora por hora</a>
+      <a href="#carta">Carta</a>
+      <a href="#casa">La casa</a>
+      <a href="#visitanos">Visitanos</a>
+    </nav>
+    <a class="bar__action" href="#reservar">Reservar</a>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO: the lamps of the façade, the folder stack ============ -->
+    <section class="hero" data-ink="light" aria-labelledby="hero-title">
+      <div class="hero__lamps" aria-hidden="true">
+        <canvas class="hero__canvas" data-lamps></canvas>
+        <svg class="hero__fallback" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMin slice">
+          <g fill="#efe7da">
+            <line x1="200" y1="0" x2="200" y2="120" stroke="#5b5f63" stroke-width="2"/>
+            <path d="M140 170a60 50 0 0 1 120 0z"/>
+            <line x1="500" y1="0" x2="500" y2="70" stroke="#5b5f63" stroke-width="2"/>
+            <path d="M420 130a80 60 0 0 1 160 0z"/>
+            <line x1="800" y1="0" x2="800" y2="150" stroke="#5b5f63" stroke-width="2"/>
+            <path d="M745 195a55 45 0 0 1 110 0z"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero__copy">
+        <h1 class="hero__title" id="hero-title">Terre Rouge</h1>
+        <p class="hero__lede">Café, pastelería y cocina misionera en la esquina de Av. Brasil y San Martín, Puerto Iguazú.</p>
+        <p class="hero__status" data-status><span class="dot" aria-hidden="true"></span><span data-status-text>Abierto todos los días de 7 a 23</span></p>
+      </div>
+
+      <nav class="folders" aria-label="Recorrido de la página">
+        <a class="folder folder--1" href="#carta" style="--i:0"><span class="folder__tab">La carta</span></a>
+        <a class="folder folder--2" href="#hora" style="--i:1"><span class="folder__tab">Hora por hora</span></a>
+        <a class="folder folder--3" href="#casa" style="--i:2"><span class="folder__tab">La casa</span></a>
+        <a class="folder folder--4" href="#visitanos" style="--i:3"><span class="folder__tab">Visitanos</span></a>
+        <div class="folder folder--front" style="--i:4">
+          <span class="folder__tab">Reservar</span>
+          <div class="front">
+            <div class="front__text">
+              <a class="btn" href="#reservar">Reservar una mesa</a>
+              <a class="link" href="https://maps.app.goo.gl/Mk44R1N6qzFxLk4o8" target="_blank" rel="noopener">Cómo llegar</a>
+            </div>
+            <figure class="front__pic">
+              <img src="img/casa/fachada-noche.webp" width="1280" height="960" alt="La fachada de Terre Rouge de noche: jardín vertical, carteles iluminados y lámparas de mimbre encendidas sobre la vereda de Av. Brasil." fetchpriority="high">
+            </figure>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ============ HOUR BY HOUR: the live thing ============ -->
+    <section class="hora" id="hora" aria-labelledby="hora-title" style="--night:0" data-hora>
+      <div class="hora__inner">
+        <p class="statement" data-reveal>
+          Un capuchino <span class="thumb"><img src="img/menu/capuchino.webp" width="160" height="160" alt="" loading="lazy"></span> a las siete,
+          chipitas <span class="thumb"><img src="img/menu/porcion-de-chipitas.webp" width="160" height="160" alt="" loading="lazy"></span> a la tarde
+          y un malbec <span class="thumb"><img src="img/menu/ojo-de-bife-con-reduccion-de-malbec.webp" width="160" height="160" alt="" loading="lazy"></span> con ojo de bife a la noche, en la misma esquina.
+        </p>
+
+        <div class="lamprow" aria-hidden="true" data-lamprow>
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="hora__grid">
+          <div class="hora__control" data-reveal>
+            <h2 id="hora-title">De 7 a 23, todos los días</h2>
+            <p class="hora__note" data-hora-note>Mové la hora y mirá qué se sirve en la esquina.</p>
+            <output class="hora__clock" for="hora-range" data-hora-clock>8:00</output>
+            <p class="hora__moment" data-hora-moment>{{MOMENT_DEFAULT_NAME}}</p>
+            <label class="hora__label" for="hora-range">Hora del día</label>
+            <input class="hora__range" id="hora-range" type="range" min="7" max="23" step="0.5" value="8" data-hora-range
+              aria-valuetext="8:00, {{MOMENT_DEFAULT_NAME}}">
+            <div class="hora__scale" aria-hidden="true"><span>7:00</span><span>12:00</span><span>16:00</span><span>20:00</span><span>23:00</span></div>
+            <button class="link hora__now" type="button" data-hora-now>Volver a la hora de Iguazú</button>
+          </div>
+          <div class="hora__picks" aria-live="polite">
+            <p class="hora__desc" data-hora-desc>{{MOMENT_DEFAULT_DESC}}</p>
+            <ul class="picks" data-hora-picks>
+{{MOMENT_DEFAULT_ITEMS}}
+            </ul>
+            <a class="link" href="#carta" data-hora-carta>Ver la carta completa</a>
+          </div>
+        </div>
+      </div>
+      <script type="application/json" id="moments">{{MOMENTS_JSON}}</script>
+    </section>
+
+    <!-- ============ LA CARTA: two-column menu, photo bullets, index with preview ============ -->
+    <section class="carta" id="carta" aria-labelledby="carta-title" data-ink="dark">
+      <div class="carta__head">
+        <h2 id="carta-title" data-reveal>La carta</h2>
+        <p class="carta__lead" data-reveal>{{COUNT}} platos, cafés y copas. Precios en pesos argentinos según la carta digital de la casa.</p>
+        <div class="search" data-reveal>
+          <label for="carta-search">Buscar en la carta</label>
+          <input id="carta-search" type="search" placeholder="Probá: chipitas, malbec, tiramisú…" autocomplete="off" data-search>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="Categorías de la carta" data-tabs>
+{{TABS}}
+      </nav>
+      <div class="carta__body">
+        <div class="carta__list" data-carta>
+{{MENU}}
+          <p class="carta__empty" data-empty hidden>No encontramos nada con esa búsqueda. Probá con otra palabra o escribinos por WhatsApp.</p>
+        </div>
+        <aside class="preview" aria-hidden="true" data-preview>
+          <div class="preview__frame"><img src="img/menu/capuchino-lg.webp" width="720" height="900" alt="" data-preview-img></div>
+          <p class="preview__cap"><span data-preview-name>Capuchino</span> <span data-preview-price>$6.500</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ LA BARRA: one frame, contents change ============ -->
+    <section class="barra" id="barra" aria-labelledby="barra-title" data-ink="light">
+      <div class="barra__text">
+        <h2 id="barra-title" data-reveal>La barra de café</h2>
+        <p data-reveal>Clásicos de jarrito y de taza grande, cafés especiales con whisky o licor, y una barra fría de frappés, smoothies y milkshakes que en verano de Iguazú se vuelve la carta principal.</p>
+        <a class="link" href="#carta" data-open-cat="cafeteria" data-reveal>Ver toda la cafetería</a>
+      </div>
+      <figure class="slides" data-slides>
+        <button class="slides__frame" type="button" aria-label="Ver la siguiente bebida" data-slides-next>
+{{BARRA}}
+        </button>
+        <figcaption class="slides__cap" data-slides-cap aria-live="polite">{{BARRA_FIRST}}</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ LA CASA: inset panel, shaped picture ============ -->
+    <section class="casa" id="casa" aria-labelledby="casa-title" data-ink="light">
+      <div class="casa__panel">
+        <h2 class="casa__title" id="casa-title" data-reveal>La esquina, encendida</h2>
+        <div class="casa__blocks">
+          <div data-reveal>
+            <h3>Siete Bocas</h3>
+            <p>El edificio de Av. Brasil y San Martín estuvo cerrado durante décadas. El Grupo Bagú lo recuperó y en febrero de 2025 abrió Terre Rouge en la planta baja, con un jardín vertical sobre la vereda y lámparas de mimbre bajo el alero.</p>
+          </div>
+          <div data-reveal>
+            <h3>Tierra colorada</h3>
+            <p>Terre Rouge quiere decir tierra colorada, la de Misiones. La cocina sigue la estación: liviana en verano, con pescados de río, chipá y mandioca cuando refresca. La pastelería llega de Madre Selva, panadería y chocolatería de la zona.</p>
+          </div>
+          <a class="btn btn--light" href="https://maps.app.goo.gl/Mk44R1N6qzFxLk4o8" target="_blank" rel="noopener" data-reveal>Cómo llegar</a>
+        </div>
+        <figure class="casa__pic" data-reveal-pic>
+          <img src="img/casa/fachada-noche-2.webp" width="1280" height="960" alt="La esquina de Terre Rouge iluminada de noche, con el hotel encima y gente conversando en la vereda." loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ VALORACIONES: portrait and offset figure ============ -->
+    <section class="opina" id="opiniones" aria-labelledby="opina-title" data-ink="dark">
+      <figure class="opina__portrait" data-reveal-pic>
+        <img src="img/casa/fachada-dia.webp" width="1600" height="1200" alt="Terre Rouge de día: el cartel Café &amp; Patisserie, el jardín vertical y las sillas de mimbre blancas en la vereda." loading="lazy">
+      </figure>
+      <div class="opina__text">
+        <h2 id="opina-title" data-reveal><span data-count="4.3">4,3</span> en Google Maps</h2>
+        <p data-reveal>Es la nota que dejan quienes pasaron por la esquina, sobre cinco estrellas. Leé las reseñas completas o dejá la tuya después de tu visita.</p>
+        <a class="link" href="https://maps.app.goo.gl/Mk44R1N6qzFxLk4o8" target="_blank" rel="noopener" data-reveal>Leer las reseñas en Google</a>
+      </div>
+      <figure class="opina__small" data-reveal-pic>
+        <img src="img/menu/cafe-con-leche-lg.webp" width="720" height="900" alt="Un café con leche servido en una mesa de Terre Rouge." loading="lazy">
+      </figure>
+    </section>
+
+    <!-- ============ RESERVAR: clip-out coupon ============ -->
+    <section class="reservar" id="reservar" aria-labelledby="reservar-title" data-ink="dark">
+      <form class="coupon" data-reserva novalidate>
+        <div class="coupon__left">
+          <h2 id="reservar-title">Reservá tu mesa</h2>
+          <p>Elegí el día, la hora y cuántos son. Se abre WhatsApp con el mensaje listo y te confirmamos desde la casa.</p>
+        </div>
+        <div class="coupon__right">
+          <label class="vh" for="r-nombre">Nombre</label>
+          <input id="r-nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+          <label class="vh" for="r-fecha">Fecha</label>
+          <input id="r-fecha" name="fecha" type="date" required>
+          <div class="coupon__pair">
+            <label class="vh" for="r-hora">Hora</label>
+            <select id="r-hora" name="hora" required>
+{{HOURS}}
+            </select>
+            <label class="vh" for="r-personas">Personas</label>
+            <select id="r-personas" name="personas" required>
+              <option value="1">1 persona</option>
+              <option value="2" selected>2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas</option>
+              <option value="más de 6">Más de 6</option>
+            </select>
+          </div>
+          <button class="coupon__submit" type="submit">Enviar por WhatsApp</button>
+          <p class="coupon__error" data-reserva-error role="alert" hidden>Completá tu nombre y la fecha para armar el mensaje.</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============ VISITANOS: the corner on the map ============ -->
+    <section class="visita" id="visitanos" aria-labelledby="visita-title" data-ink="dark">
+      <div class="visita__text">
+        <h2 id="visita-title" data-reveal>Av. Brasil y San Martín</h2>
+        <dl class="datos" data-reveal>
+          <div><dt>Dirección</dt><dd>Av. Brasil y San Martín, esquina Siete Bocas<br>N3370 Puerto Iguazú, Misiones</dd></div>
+          <div><dt>Horario</dt><dd>Lunes a domingo, de 7:00 a 23:00</dd></div>
+          <div><dt>Teléfono</dt><dd><a href="tel:+543757637686">+54 3757 63-7686</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5493757637686" target="_blank" rel="noopener">Reservas: 3757 63-7686</a><br><a href="https://wa.me/5493757632946" target="_blank" rel="noopener">Consultas: 3757 63-2946</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://instagram.com/terrerougeiguazu" target="_blank" rel="noopener">@terrerougeiguazu</a></dd></div>
+        </dl>
+        <div class="visita__actions" data-reveal>
+          <a class="btn" href="https://maps.app.goo.gl/Mk44R1N6qzFxLk4o8" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          <a class="link" href="tel:+543757637686">Llamar</a>
+        </div>
+      </div>
+      <figure class="visita__map" data-reveal-pic>
+        <svg class="visita__plan" viewBox="0 0 600 540" role="img" aria-label="Plano de la esquina: Terre Rouge en el cruce de Av. Brasil y San Martín.">
+          <rect width="600" height="540" fill="#e2e0da"/>
+          <path d="M-20 120 L620 420" stroke="#eeede9" stroke-width="54"/>
+          <path d="M150 -20 L380 560" stroke="#eeede9" stroke-width="40"/>
+          <path d="M-20 470 L300 -20" stroke="#eeede9" stroke-width="28"/>
+          <text x="440" y="330" fill="#4d5357" font-size="22" font-family="Chillax, sans-serif" transform="rotate(25 440 330)">Av. Brasil</text>
+          <text x="330" y="470" fill="#4d5357" font-size="22" font-family="Chillax, sans-serif" transform="rotate(68 330 470)">San Martín</text>
+          <line x1="262" y1="248" x2="262" y2="196" stroke="#16191c" stroke-width="4"/>
+          <path d="M222 200 a40 30 0 0 1 80 0 z" fill="#a8371f"/>
+          <text x="312" y="190" fill="#16191c" font-size="26" font-weight="600" font-family="Chillax, sans-serif">Terre Rouge</text>
+        </svg>
+        <iframe title="Mapa: Terre Rouge en Av. Brasil y San Martín, Puerto Iguazú" src="https://www.google.com/maps?q=-25.5967935,-54.575345&amp;z=17&amp;hl=es&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </figure>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER: the mark, built large ============ -->
+  <footer class="pie" data-ink="light">
+    <p class="mark" aria-label="Terre Rouge">
+      <span class="mark__row"><span style="--h:.92">T</span><span style="--h:.7">E</span><span style="--h:1">R</span><span style="--h:.78">R</span><span style="--h:.88">E</span></span>
+      <span class="mark__row"><span style="--h:1">R</span><span style="--h:.74">O</span><span style="--h:.9">U</span><span style="--h:.66">G</span><span style="--h:.84">E</span></span>
+    </p>
+    <div class="pie__cols">
+      <ul>
+        <li><a href="#hora">Hora por hora</a></li>
+        <li><a href="#carta">La carta</a></li>
+        <li><a href="#barra">La barra</a></li>
+      </ul>
+      <ul>
+        <li><a href="#casa">La casa</a></li>
+        <li><a href="#reservar">Reservar</a></li>
+        <li><a href="#visitanos">Visitanos</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://instagram.com/terrerougeiguazu" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/5493757637686" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://soymenu.com.ar/terrerougeiguazu" target="_blank" rel="noopener">Carta digital</a></li>
+      </ul>
+      <address>
+        Av. Brasil y San Martín, Puerto Iguazú, Misiones<br>
+        Todos los días de 7:00 a 23:00<br>
+        <a href="tel:+543757637686">+54 3757 63-7686</a>
+      </address>
+    </div>
+    <div class="pie__last">
+      <p>© Terre Rouge Iguazú. Fotos de la carta: Terre Rouge. Fachada de noche: Economis. Fachada de día: Fabián Zeballos en Google Maps.</p>
+      <a class="btn btn--small" href="#top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Acciones rápidas" data-dock>
+    <a href="https://wa.me/5493757637686?text=Hola%20Terre%20Rouge!%20Quisiera%20hacer%20una%20reserva." target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#carta">Carta</a>
+    <a href="https://maps.app.goo.gl/Mk44R1N6qzFxLk4o8" target="_blank" rel="noopener">Mapa</a>
+  </nav>
+
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/lamps.js"></script>
+</body>
+</html>
