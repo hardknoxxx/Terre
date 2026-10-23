@@ -80,12 +80,10 @@ const barra = BARRA.map((id, i) => {
 }).join('\n');
 const first = byId[BARRA[0]];
 
-// Instagram: the six latest posts of @terrerougeiguazu, newest first.
+// Instagram: the latest posts of @terrerougeiguazu, newest first (posts showing the guest from the reels are left out).
 const IG = [
-  { code: 'DeregFex7B2', img: 'gin-tonic', date: '19 de octubre', text: 'Hoy celebramos el Día del Gin Tonic. ¿Vos también tenés ese pedido que nunca falla?', alt: 'Una clienta levanta una copa de gin tonic de frutos rojos en el salón.' },
   { code: 'Deovw-jx9xN', img: 'dia-de-la-madre', date: '18 de octubre', text: 'Mamá, hija y una mesa para compartir historias. Este Día de la Madre, regalale tiempo.', alt: 'Madre e hija brindan con vino tinto frente a una mesa servida.' },
   { code: 'DegzUzZEaWD', img: 'menus-de-tres-pasos', date: '15 de octubre', text: 'Dos menús de tres pasos con sabores de nuestra tierra, que llegan para quedarse en la carta.', alt: 'La mesa con los platos de los dos menús de tres pasos.' },
-  { code: 'DeaEYf_hA1e', img: 'sorteo', date: '12 de octubre', text: 'Sorteamos una cena para dos con un menú de tres pasos a elección.', alt: 'Anuncio del sorteo de una cena para dos, frente al cartel de Terre Rouge.' },
   { code: 'Dd8wKzgkTnx', img: 'dia-del-cafe', date: '1 de octubre', text: 'Feliz Día del Café: para empezar el día, compartir una charla o hacer una pausa.', alt: 'Manos alrededor de una taza de café con leche: «Hace calor. Pero el café no se suspende».' },
   { code: 'Dd4mhrapDmS', img: 'experiencia', date: '29 de septiembre', text: 'No es solo venir a comer: es sentarte, disfrutar el ambiente y compartir un momento especial.', alt: 'La fachada de día, con el jardín vertical y una persona pasando por la vereda.' },
 ];

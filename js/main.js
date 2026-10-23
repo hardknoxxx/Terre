@@ -326,6 +326,7 @@
     if (sec.classList.contains('visita')) return ['var(--stone-2)', 'var(--ink)'];
     return palette[sec.dataset.ink] || palette.light;
   };
+  let lastY = scrollY;
   const onScroll = () => {
     const y = scrollY;
     const hh = hero.offsetHeight;
@@ -337,6 +338,10 @@
     const sec = inkSections.find((s) => { const r = s.getBoundingClientRect(); return r.top <= probe && r.bottom > probe; });
     if (sec) { const [bg, ink] = inkFor(sec); bar.style.setProperty('--bar-bg', bg); bar.style.setProperty('--bar-ink', ink); }
     dock && dock.classList.toggle('is-on', y > hh * 0.6);
+    // the bar steps aside while reading down and comes back as soon as the visitor scrolls up
+    if (y > hh && y > lastY + 6) root.classList.add('bar-hidden');
+    else if (y < lastY - 6 || y <= hh) root.classList.remove('bar-hidden');
+    lastY = y;
   };
   let ticking = false;
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { onScroll(); ticking = false; }); } }, { passive: true });

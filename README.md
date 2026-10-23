@@ -34,8 +34,8 @@ y los momentos de "Hora por hora" están en `build.mjs` (`MOMENTS`).
 - **La carta**: pestañas por categoría, buscador y vista previa grande al pasar el mouse (escritorio).
 - **Reservas**: el formulario arma un mensaje de WhatsApp al +54 9 3757 63-7686.
 - **Mapa**: Google Maps embebido. Debajo queda un plano dibujado de la esquina por si el mapa no carga.
-- **Dos menús de tres pasos**: los platos que la casa presentó en Instagram (Día de la Madre) y que quedan en la carta, con un video corto de esos platos (`media/menus-loop.mp4`, armado desde su reel).
-- **Lo último en Instagram**: los 6 posts más recientes de @terrerougeiguazu, cada uno con enlace al post. Para actualizarlos, cambiá la lista `IG` en `build.mjs` y las imágenes en `img/ig/`.
+- **Dos menús de tres pasos**: los platos que la casa presentó en Instagram (Día de la Madre) y que quedan en la carta, con un video corto de esos platos (`media/menus-loop.mp4`, armado desde su reel solo con tomas de los platos).
+- **Lo último en Instagram**: los posts más recientes de @terrerougeiguazu (sin los que muestran a la chica de los reels), cada uno con enlace al post. Para actualizarlos, cambiá la lista `IG` en `build.mjs` y las imágenes en `img/ig/`.
 
 ## Fuentes de los datos y las fotos
 
