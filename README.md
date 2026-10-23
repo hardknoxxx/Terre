@@ -1,12 +1,14 @@
 # Terre Rouge Iguazú: sitio web
 
-Web de una sola página para **Terre Rouge, Café & Patisserie**, en Av. Brasil y San Martín, Puerto Iguazú.
+Web de una sola página para **Terre Rouge · Café, Vin & Cuisine**, en Av. Brasil y San Martín, Puerto Iguazú.
 Es HTML, CSS y JS sin framework. Se usa la misma página en celular y en escritorio.
+
+Publicada en https://terre-rouge-iguazu.vercel.app. Cada push a `main` se publica solo en Vercel.
 
 ## Cómo verla
 
 ```bash
-cd terre-rouge
+# desde la raíz del repo
 python3 -m http.server 8000   # o cualquier servidor estático
 # abrir http://localhost:8000
 ```
